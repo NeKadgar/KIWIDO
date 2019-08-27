@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'server2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'chandb',
+        'NAME': 'chatdb',
         'USER': 'maxim',
         'PASSWORD': 'g^4eQN#bV@&HPo',
         'HOST': 'localhost',
