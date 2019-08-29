@@ -4,6 +4,10 @@ from rest_framework.authtoken.models import Token
 from djoser.urls.base import User
 from .models import Note, Desk, Table, TableNote
 
+
+def sitemap(request):
+    return render(request, 'api/sitemap.xml', content_type='application/xhtml+xml')
+    
 # Mini Notes
 def postNote(request, token, note):
     username = Token.objects.get(key=token)

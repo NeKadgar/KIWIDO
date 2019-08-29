@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sitemap.xml', sitemap),
     #--------Mini Notes--------
     url(r'^api/mnote/post/(?P<token>[\w ]+)/(?P<note>[\w ]+)/$', postNote),
     url(r'^api/mnote/get/(?P<token>[\w ]+)/$', getNote),
